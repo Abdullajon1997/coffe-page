@@ -397,6 +397,12 @@ img {
   color: #0E8784;
 }
 
+.bg-dark {
+  background-color: #000;
+  width: 100%;
+  border-radius: 15px;
+}
+
 .container {
   max-width: 1440px;
   padding: 0 80px;
@@ -866,8 +872,10 @@ img {
   margin-top: 119px;
   padding-top: 106px;
   padding-bottom: 109px;
-  background-color: #000;
   border-radius: 15px;
+}
+.enjoy__inner {
+  padding-top: 25px;
 }
 .enjoy__inner__div {
   background-image: url(./../../images/enjoy.line.png);
@@ -876,7 +884,8 @@ img {
   display: flex;
   justify-content: space-between;
   margin-right: 505px;
-  background-position-y: 15px;
+  background-position-y: 115px;
+  padding-top: 100px;
 }
 
 .drink__inner {

@@ -489,10 +489,10 @@
     margin-top: 119px;
     padding-top: 106px;
     padding-bottom: 109px;
-    background-color: #000;
     border-radius: 15px;
     &__inner
     {
+        padding-top: 25px;
         &__div
         {
             background-image: url(./../../images/enjoy.line.png);
@@ -501,7 +501,8 @@
             display: flex;
             justify-content: space-between;
             margin-right: 505px;
-            background-position-y: 15px;
+            background-position-y: 115px;
+            padding-top: 100px;
         }
     }
 }
