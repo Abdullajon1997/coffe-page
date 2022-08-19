@@ -8,6 +8,14 @@
         background-size: cover;
         background-clip: border-box;
         border-radius: 15px;
+        margin: 0;
+        padding: 0;
+        &__in
+        {
+            padding-top: 117px;
+            padding-left: 84px;
+            padding-bottom: 116px;
+        }
         
         &__h1
         {
@@ -18,8 +26,8 @@
             line-height: 72px;
             color: #FEFCF7;
             width: 493px;
-            margin-left: 84.9px;
-            margin-top: 117px;
+            margin-bottom: 32px;
+
         }
         &__p
         {
@@ -32,25 +40,17 @@
             mix-blend-mode: normal;
             opacity: 0.8;
             width: 400px;
-            margin-left: 84.9px;
-            margin-top: 32px;
+            margin-bottom: 56px;
+
         }
-        &__btn
-        {
-            margin-top: 56px;
-            margin-bottom: 116px;
-            margin-left: 84.9px;
-        }
+
     }
 }
 .our
 {
     &__inner
     {
-        background-image: url(./../../images/our.png);
-        background-repeat: no-repeat;
-        background-size: 100%;
-        display: flex;
+        width: 100%;
         &__list
         {
             display: flex;
@@ -58,12 +58,35 @@
             align-items: center;
             list-style: none;
             width: 100%;
-            margin-top: 150px;
+            margin: 0;
+            padding: 0;
             margin-bottom: 188.45px;
+            padding: 0 150px;
+            margin-top: 256px;
             &__item
             {
-                display: flex;
+                display: block;
             }
+        }
+        &__h2
+        {
+            width: 100%;
+            background-color: #83888F;
+            font-family: 'Fraunces';
+            font-style: normal;
+            font-weight: 900;
+            font-size: 150px;
+            line-height: 1.5;
+            text-align: center;
+            color: transparent;
+            -webkit-background-clip: text;
+            background-image: linear-gradient(180deg,rgba(254,252,247,0.0001)0%,#fefcf7 100%);
+            // width: calc(100% + 100%);
+            margin: 0;
+            padding: 0;
+            z-index: -1;
+            margin-bottom: -355px;
+
         }
         &__img
         {
@@ -71,7 +94,7 @@
             height: 193px;
             display: block;
         }
-        &__h2
+        &__h3
         {
             font-family: 'Fraunces';
             font-style: normal;
@@ -179,58 +202,22 @@
         }
    }
 }
-.how
-{
-    &__inner
-    {
-        background-image: url(../../images/line.png);
-        background-repeat: no-repeat;
-        position: relative;
-        background-position-y: 65px;
-        background-position-x: 5px;
-        &__div
-        {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-            margin-right: 484px;
-        }
-        &__h2
-        {
-            font-family: 'Fraunces';
-            font-style: normal;
-            font-weight: 900;
-            font-size: 24px;
-            line-height: 32px;
-            color: #83888F;
-            margin-top: 300px;
-        }
-        &__img
-        {
-            display: block;
-
-        }
-    }
-}
 .coffee
 {
-    &__inner
+   &__inner
+   {
+    margin-bottom: 200px;
+    &__list
     {
-       &__list
-       {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        list-style: none;
         margin: 0;
         padding: 0;
-        margin-top: 50px;
-        margin-bottom: 50px;
-        &__item
-        {
-            padding-left: 20px;
-            padding-right: 20px;
-        }
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        margin-right: 150px;
+        padding-top: 82px;
         &__h2
         {
             font-family: 'Fraunces';
@@ -239,8 +226,6 @@
             font-size: 72px;
             line-height: 72px;
             color: #FDD6BA;
-            margin-top: 67px;
-            margin-bottom: 38px;
 
         }
         &__h3
@@ -251,7 +236,7 @@
             font-size: 32px;
             line-height: 36px;
             color: #333D4B;
-            margin-bottom: 42px;
+            width: 255px;
         }
         &__p
         {
@@ -261,11 +246,49 @@
             font-size: 16px;
             line-height: 26px;
             color: #333D4B;
-            width: 269px;
-            margin-bottom: 64px;
+            width: 285px;
         }
-       }
+        &__item
+        {
+            position: relative;
+            border: 1px solid white;
+            width: 285px;
+            height: 355px;
+            &::before
+            {
+                position: absolute;
+                top: -67px;
+                left: 0;
+                width: 27px;
+                height: 27px;
+                border-radius: 50%;
+                border: 2px solid #0E8784;
+                background: #FEFCF7;
+                content: " ";
+            }
+        }
+        &__item:not(:last-child)::after
+        {
+            position: absolute;
+            top: -57px;
+            left: 0;
+            width: calc(100% + 150px);
+            height: 2px;
+            background-color: #FDD6BA;
+            content: " ";
+            z-index: -1;
+            left: 15px;
+            bottom: 15px;
+        }
+        
+        &__btn
+        {
+            padding-top: 64px;
+            padding-bottom: 200px;
+        }
     }
+    padding-top: 312px;
+   }
 }
 // =================Abuot US==================//
 .abuot
@@ -278,6 +301,11 @@
         background-image: url(../../images/Abuot.png);
         background-repeat: no-repeat;
         border-radius: 10px;
+        &__in
+        {
+            margin-top: 137px;
+            margin-left: 85px;
+        }
         &__h1
         {
             font-family: 'Fraunces';
@@ -286,9 +314,6 @@
             font-size: 40px;
             line-height: 48px;
             color: #FEFCF7;
-            margin-top: 137px;
-            margin-left: 85px;
-
         }
         &__p
         {
@@ -300,8 +325,6 @@
             color: #FEFCF7;
             width: 445px;
             margin-top: 24px;
-            margin-bottom: 137px;
-            margin-left: 85px;
         }
     }
 }
@@ -457,6 +480,11 @@
         background-image: url(../../images/create.png);
         background-repeat: no-repeat;
         border-radius: 10px;
+        &__in
+        {
+            margin-top: 137px;
+            margin-left: 85px;
+        }
         &__h1
         {
             font-family: 'Fraunces';
@@ -465,9 +493,6 @@
             font-size: 40px;
             line-height: 48px;
             color: #FEFCF7;
-            margin-top: 137px;
-            margin-left: 85px;
-
         }
         &__p
         {
@@ -479,32 +504,94 @@
             color: #FEFCF7;
             width: 445px;
             margin-top: 24px;
-            margin-bottom: 137px;
-            margin-left: 85px;
         }
     }
 }
 .enjoy
 {
-    margin-top: 119px;
-    padding-top: 106px;
-    padding-bottom: 109px;
-    border-radius: 15px;
     &__inner
+   {
+    margin-bottom: 200px;
+    &__list
     {
-        padding-top: 25px;
-        &__div
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        margin-right: 150px;
+        padding-top: 82px;
+        &__h2
         {
-            background-image: url(./../../images/enjoy.line.png);
-            background-repeat: no-repeat;
-            margin-top: 164px;
-            display: flex;
-            justify-content: space-between;
-            margin-right: 505px;
-            background-position-y: 115px;
-            padding-top: 100px;
+            font-family: 'Fraunces';
+            font-style: normal;
+            font-weight: 900;
+            font-size: 72px;
+            line-height: 72px;
+            color: #FDD6BA;
+        }
+        &__h3
+        {
+            font-family: 'Fraunces';
+            font-style: normal;
+            font-weight: 900;
+            font-size: 32px;
+            line-height: 36px;
+            color: #FEFCF7;
+            width: 255px;
+
+        }
+        &__p
+        {
+            font-family: 'Barlow';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 26px;
+            color: #FEFCF7;
+        }
+        &__item
+        {
+            position: relative;
+            width: 285px;
+            height: 355px;
+            &::before
+            {
+                position: absolute;
+                top: -67px;
+                left: 0;
+                width: 27px;
+                height: 27px;
+                border-radius: 50%;
+                border: 2px solid #0E8784;
+                background: #FEFCF7;
+                content: " ";
+            }
+        }
+        &__item:not(:last-child)::after
+        {
+            position: absolute;
+            top: -57px;
+            left: 0;
+            width: calc(100% + 100px);
+            height: 2px;
+            background-color: white;
+            content: " ";
+            z-index: 1;
+            left: 15px;
+            bottom: 15px;
+        }
+        
+        &__btn
+        {
+            padding-top: 64px;
+            padding-bottom: 200px;
         }
     }
+    padding-top: 312px;
+   }
 }
 .drink
 {
@@ -565,22 +652,28 @@
             list-style: none;
             &__span
             {
-                font-family: 'Fraunces';
-                font-style: normal;
-                font-weight: 900;
-                font-size: 24px;
-                line-height: 32px;
-                color: #0E8784;
+                &:hover
+                {
+                    font-family: 'Fraunces';
+                    font-style: normal;
+                    font-weight: 900;
+                    font-size: 24px;
+                    line-height: 32px;
+                    color: #0E8784;
+                }
 
             }
             &__span3
             {
-                font-family: 'Fraunces';
-                font-style: normal;
-                font-weight: 900;
-                font-size: 24px;
-                line-height: 32px;
-                color: #333D4B;
+                &:hover
+                {
+                    font-family: 'Fraunces';
+                    font-style: normal;
+                    font-weight: 900;
+                    font-size: 24px;
+                    line-height: 32px;
+                    color: #333D4B;
+                }
 
             }
             &__item
@@ -611,6 +704,7 @@
             list-style: none;
             margin: 0;
             padding: 0;
+            
             &__items
             {
                 border: 1px solid #F4F1EB;
@@ -618,6 +712,16 @@
                 margin-right: 23px;
                 width: 228px;
                 height: 250px;
+                &:hover
+                {
+                    background: #FDD6BA;
+                    border-radius: 8px;
+                }
+                &:active
+                {
+                    background: #0E8784;
+                    border-radius: 8px;
+                }
                 &__h3
                 {
                     font-family: 'Fraunces';

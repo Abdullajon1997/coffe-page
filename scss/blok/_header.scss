@@ -1,6 +1,5 @@
 .header
 {
-    background: #F2F2F2;
     &__inner
     {
         display: flex;
@@ -21,6 +20,7 @@
             align-items: center;
             &__item
             {
+                margin-left: 32px;
                 list-style: none;
                 &__link
                 {
@@ -33,7 +33,7 @@
                     letter-spacing: 0.923077px;
                     text-transform: uppercase;
                     color: #83888F;
-                    margin-left: 32px;
+                    
                     &:hover
                     {
                         font-family: 'Barlow';
